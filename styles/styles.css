@@ -1,0 +1,36 @@
+.navbar {
+    width: 100%;
+}
+
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.913), rgba(15, 13, 36, 0.75)), url(../resources/staircase.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0;
+    color: rgb(199, 199, 199);
+    text-align: center;
+    min-height: calc(100vh - 124px);
+    margin: 0;
+    top: 56px;
+    width: 100vw;    
+}
+
+.chris-image {
+    border-radius: 100%;
+    height: 160px;
+    margin: 20px;
+}
+
+.northCoders-image, .rowanmoor-image, .embark-image {
+    width: 200px;
+    margin: 20px;
+}
+
+.footer {
+    background-color: rgb(211, 211, 211);
+    text-align: center;
+}
+
+.fab {
+    margin: 10px 10px;
+}
