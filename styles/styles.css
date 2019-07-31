@@ -2,17 +2,27 @@
     width: 100%;
 }
 
-.jumbotron {
+body {
+    height: 100vh;
+    min-height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.913), rgba(15, 13, 36, 0.75)), url(../resources/staircase.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 0;
     color: rgb(199, 199, 199);
+    padding-top: 80px;
+    padding-bottom: 80px;
     text-align: center;
-    min-height: calc(100vh - 124px);
-    margin: 0;
-    top: 56px;
-    width: 100vw;    
+    width: 100vw;
+}
+
+hr {
+    border-color: rgb(86, 87, 87);
+    width: 50vw;
 }
 
 .chris-image {
@@ -26,12 +36,14 @@
     margin: 20px;
 }
 
-.footer {
-    background-color: rgb(211, 211, 211);
-    text-align: center;
-}
-
 .fab {
     margin: 10px 10px;
 }
 
+.fab:hover {
+    text-decoration: none;
+}
+
+.card {
+    margin-bottom: 50px;
+}
