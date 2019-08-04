@@ -5,7 +5,7 @@
 }
 
 .page-container {
-    background-color: rgba(32, 38, 40, 0.735);
+    background-color: rgba(84, 93, 96, 0.434);
     min-height: 100vh;
     height: 100%;
     max-width: 1200px;
@@ -13,7 +13,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(1, 18, 24, 0.762), rgba(5, 3, 19, 0.75)), url(../resources/Manchester.jpg);
+    background-image: linear-gradient(rgba(77, 66, 82, 0.571), rgba(230, 200, 101, 0.509)), url(../resources/Manchester.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ p {
 .jumbotron {
     background-color: rgba(255, 255, 255, 0);
     border-radius: 0;
-    color: rgb(199, 199, 199);
+    color: rgb(232, 232, 232);
     padding-top: 80px;
     padding-bottom: 80px;
     text-align: center;
