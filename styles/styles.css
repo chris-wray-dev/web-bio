@@ -1,23 +1,47 @@
-.navbar {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.page-container {
-    background-color: rgba(84, 93, 96, 0.434);
-    min-height: 100vh;
-    height: 100%;
-    max-width: 1200px;
-    margin: auto;
-}
-
 body {
     background-image: linear-gradient(rgba(77, 66, 82, 0.571), rgba(230, 200, 101, 0.509)), url(../resources/Manchester.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#navbar {
+    background-color: rgba(63, 44, 67, 0.646);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    max-width: 1200px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: rgb(33, 18, 18);
+
+}
+
+h4 {
+    padding-top: 10px;
 }
 
 p {
@@ -25,17 +49,18 @@ p {
     margin: auto;
 }
 
-.jumbotron {
-    background-color: rgba(255, 255, 255, 0);
+.page-content {
+    background-color: rgba(48, 48, 48, 0.44);
     border-radius: 0;
     color: rgb(232, 232, 232);
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 100px 10px;
     text-align: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 hr {
-    border-color: rgb(86, 87, 87);
+    border-color: rgb(233, 233, 233);
     width: 60%;
 }
 
@@ -45,13 +70,15 @@ hr {
     margin: 20px;
 }
 
-.northCoders-image, .rowanmoor-image, .embark-image {
+.northCoders-image,
+.rowanmoor-image,
+.embark-image {
     width: 200px;
     margin: 20px;
 }
 
 .fab {
-    margin: 10px 10px;
+    margin: 0 10px;
 }
 
 .fab:hover {
@@ -59,7 +86,7 @@ hr {
 }
 
 .card {
-    margin: 0 20px 50px 0;
+    margin: 10px 10px;
 }
 
 .stack-logo {
