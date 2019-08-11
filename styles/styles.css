@@ -54,7 +54,7 @@ p {
     margin: auto;
 }
 
-.page-content {
+#page-content {
     background-color: rgba(48, 48, 48, 0.44);
     border-radius: 0;
     color: rgb(232, 232, 232);
@@ -64,6 +64,16 @@ p {
     margin: auto;
     height: 100%;
     min-height: 100vh;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+}
+
+.hide {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
 }
 
 hr {
