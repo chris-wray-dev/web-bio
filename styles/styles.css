@@ -41,6 +41,10 @@ body {
 
 }
 
+a.current {
+    font-weight: bold;
+}
+
 h4 {
     padding-top: 10px;
 }
