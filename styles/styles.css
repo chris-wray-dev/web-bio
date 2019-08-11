@@ -37,7 +37,7 @@ body {
 }
 
 #navbar a:hover {
-    background-color: rgb(33, 18, 18);
+    background-color: rgba(41, 27, 53, 0.543);
 
 }
 
@@ -55,7 +55,7 @@ p {
 }
 
 #page-content {
-    background-color: rgba(48, 48, 48, 0.44);
+    background-color: rgba(48, 48, 48, 0.598);
     border-radius: 0;
     color: rgb(232, 232, 232);
     padding: 100px 10px;
