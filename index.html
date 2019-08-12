@@ -20,12 +20,12 @@
 <body>
     <div id="navbar">
         <h4>Chris Wray - Developer</h4>
-        <a class="nav-link current" href="index.html">Home</a>
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link about-button" href="#">Home</a>
+        <a class="nav-link portfolio-button" href="#">Portfolio</a>
+        <a class="nav-link contact-button current" href="#">Contact</a>
     </div>
 
-    <div id="page-content" class="hide">
+    <div id="about" class="hide">
         <h4>About Me</h4>
         <img class="chris-image" src="resources/chris.png" alt="Chris Wray image">
         <p class="lead">Hi, i'm Chris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -52,6 +52,83 @@
                 alt=""></a>
         <a target="_blank" href="https://rowanmoor.co.uk/"><img class="rowanmoor-image" src="resources/rowanmoor.png"
                 alt=""></a>
+    </div>
+
+    <div id="portfolio">
+        <h4>Portfolio</h4>
+        <br>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card bg-dark">
+                        <img class="card-img-top" src="resources/embrace-hr.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Fund Accounts Package</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <hr>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-dark">
+                        <img class="card-img-top" src="resources/embrace-hr.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Embrace HR Online</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <hr>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-dark">
+                        <img class="card-img-top" src="resources/embrace-hr.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <hr>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="col-sm-6 offset-sm-3 text-center">
+                <h4>Contact Me</h4>
+                <br>
+                <div class="info-form">
+                    <form action="" class="form-inlin justify-content-center">
+                        <div class="form-group">
+                            <label class="sr-only">Name</label>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only">Email</label>
+                            <input type="email" class="form-control" placeholder="enter@email.here">
+                        </div>
+                        <div class="form-group">
+                            <label>Please enter your message</label>
+                            <textarea class="form-control" rows="8"></textarea>
+                        </div>
+                        <br>
+                        <hr>
+                        <button type="submit" class="btn btn-success ">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <nav class="navbar fixed-bottom navbar-light bg-light">

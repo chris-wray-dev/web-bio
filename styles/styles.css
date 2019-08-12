@@ -54,7 +54,7 @@ p {
     margin: auto;
 }
 
-#page-content {
+#about, #portfolio, #contact {
     background-color: rgba(48, 48, 48, 0.598);
     border-radius: 0;
     color: rgb(232, 232, 232);
@@ -64,6 +64,10 @@ p {
     margin: auto;
     height: 100%;
     min-height: 100vh;
+}
+
+#portfolio, #contact {
+    display: none;
 }
 
 .show {
