@@ -1,103 +1,44 @@
-// function showPage(e) {
-//   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-//   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-//   if (!audio) return;
-//   audio.currentTime = 0;
-//   audio.play();
-//   key.classList.add('playing');
-// }
-
-// function removeTransition(e) {
-//   if (e.propertyName !== 'transform') return;
-//   this.classList.remove('playing');
-// }
-
-// const keys = document.querySelectorAll('.key');
-// keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-// window.addEventListener('keydown', playSound);
-
-
-
-
-
 function showPage(e) {
-  const aboutPage = document.getElementById("about");
+  const aboutPage = document.getElementById('about');
   const portfolioPage = document.getElementById("portfolio");
   const contactPage = document.getElementById("contact");
-  console.log(e.target.className);
-
+  const aboutButton = document.getElementById('about-button');
+  const portfolioButton = document.getElementById('portfolio-button');
+  const contactButton = document.getElementById('contact-button');
+  
   if (e.target.className === "nav-link about-button") {
 
-    aboutPage.style.display = 'inherit';
-    aboutPage.classList.add('show');
-    aboutPage.classList.remove('hide');
-
-    portfolioPage.style.display = 'none';
-    portfolioPage.classList.add('hide');
-    portfolioPage.classList.remove('show');
-
-    contactPage.style.display = 'none';
-    contactPage.classList.add('hide');
-    contactPage.classList.remove('show');
+    aboutPage.classList.remove('hidden');
+    portfolioPage.classList.add('hidden');
+    contactPage.classList.add('hidden');
+    aboutButton.classList.add('current');
+    portfolioButton.classList.remove('current');
+    contactButton.classList.remove('current');
 
   } else if (e.target.className === "nav-link portfolio-button") {
 
-    aboutPage.style.display = 'none';
-    aboutPage.classList.add('hide');
-    aboutPage.classList.remove('show');
+    aboutPage.classList.add('hidden');
+    portfolioPage.classList.remove('hidden');
+    contactPage.classList.add('hidden');
+    aboutButton.classList.remove('current');
+    portfolioButton.classList.add('current');
+    contactButton.classList.remove('current');
 
-    portfolioPage.style.display = 'inherit';
-    portfolioPage.classList.add('show');
-    portfolioPage.classList.remove('hide');
+    
+  } else if (e.target.className === "nav-link contact-button") {
 
-    contactPage.style.display = 'none';
-    contactPage.classList.add('hide');
-    contactPage.classList.remove('show');
-
-    console.log(aboutPage);
-    console.log(portfolioPage);
-    console.log(contactPage);
+    aboutPage.classList.add('hidden');
+    portfolioPage.classList.add('hidden');
+    contactPage.classList.remove('hidden');
+    aboutButton.classList.remove('current');
+    portfolioButton.classList.remove('current');
+    contactButton.classList.add('current');
+    
   }
 
 }
 
-const buttons = document.querySelectorAll("button");
-
 window.addEventListener('click', showPage);
-
-//   aboutPage.style.display = true;
-//   aboutPage.classList.add('show');
-//   aboutPage.classList.remove('hide');
-
-//   portfolioPage.style.display = false;
-//   portfolioPage.classList.add('hide');
-//   portfolioPage.classList.remove('show');
-
-//   contactPage.style.display = false;
-//   contactPage.classList.add('hide');
-//   contactPage.classList.remove('show');
-// });
-
-// portfolioButton.addEventListener("click", function() {
-//   aboutPage.style.display = false;
-//   aboutPage.classList.add('hide');
-//   aboutPage.classList.remove('show');
-
-//   portfolioPage.style.display = true;
-//   portfolioPage.classList.add('show');
-//   portfolioPage.classList.remove('hide');
-
-//   contactPage.style.display = false;
-//   contactPage.classList.add('hide');
-//   contactPage.classList.remove('show');
-// });
-
-// contactButton.addEventListener("click", showContact);
-
-window.onload = function () {
-  document.getElementById("about").classList.add('show');
-  document.getElementById("about").classList.remove('hide');
-}
 
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;

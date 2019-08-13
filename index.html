@@ -20,12 +20,12 @@
 <body>
     <div id="navbar">
         <h4>Chris Wray - Developer</h4>
-        <a class="nav-link about-button" href="#">Home</a>
-        <a class="nav-link portfolio-button" href="#">Portfolio</a>
-        <a class="nav-link contact-button current" href="#">Contact</a>
+        <a id="about-button" class="nav-link about-button current" href="#">About</a>
+        <a id="portfolio-button" class="nav-link portfolio-button" href="#">Portfolio</a>
+        <a id="contact-button" class="nav-link contact-button" href="#">Contact</a>
     </div>
 
-    <div id="about" class="hide">
+    <div id="about">
         <h4>About Me</h4>
         <img class="chris-image" src="resources/chris.png" alt="Chris Wray image">
         <p class="lead">Hi, i'm Chris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -54,7 +54,7 @@
                 alt=""></a>
     </div>
 
-    <div id="portfolio">
+    <div id="portfolio" class="hidden">
         <h4>Portfolio</h4>
         <br>
         <div class="container">
@@ -103,7 +103,7 @@
         </div>
     </div>
 
-    <div id="contact">
+    <div id="contact" class="hidden">
         <div class="container">
             <div class="col-sm-6 offset-sm-3 text-center">
                 <h4>Contact Me</h4>

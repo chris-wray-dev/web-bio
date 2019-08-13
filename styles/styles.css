@@ -7,12 +7,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.navbar {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-}
-
 #navbar {
     background-color: rgba(63, 44, 67, 0.81);
     position: fixed;
@@ -38,10 +32,10 @@ body {
 
 #navbar a:hover {
     background-color: rgba(41, 27, 53, 0.543);
-
 }
 
 a.current {
+    background-color: rgba(41, 27, 53, 0.543);
     font-weight: bold;
 }
 
@@ -66,18 +60,8 @@ p {
     min-height: 100vh;
 }
 
-#portfolio, #contact {
+.hidden {
     display: none;
-}
-
-.show {
-    opacity: 1;
-    transition: opacity 2s ease-in-out;
-}
-
-.hide {
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
 }
 
 hr {
