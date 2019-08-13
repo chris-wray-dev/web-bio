@@ -39,9 +39,11 @@ function showPage(e) {
 }
 
 window.addEventListener('click', showPage);
+let prevScrollpos = window.pageYOffset;
 
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
+  console.log(window.pageXOffset)
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
