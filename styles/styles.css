@@ -94,7 +94,8 @@ hr {
     margin: 10px 10px;
 }
 
-.stack-logo {
-    background-color: rgb(199, 199, 199);
-    width: 45px;
+.devicon {
+    font-size: 3rem;
+    color: rgb(177, 156, 85);
+    margin: 10px;
 }
